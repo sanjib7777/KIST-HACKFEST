@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Phishing URL Blocker",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": { "48": "warning1.png", "128": "warning1.png" },
+  "browser_action": {
+    "default_popup": "Popup.html",
+    "default_title": "Phishing URL Blocker"
+  },
+  "permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.netflix.com/*"
+  ]
+}
